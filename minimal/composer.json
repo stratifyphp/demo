@@ -1,5 +1,5 @@
 {
     "require": {
-        "stratify/http": "@dev"
+        "stratify/http": "~0.1.0"
     }
 }

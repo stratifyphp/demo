@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "065845d936fde2426463b1ff679920e3",
+    "hash": "9268eb0042aaf2afd42dadbb65d4f67f",
     "packages": [
         {
             "name": "psr/http-message",
@@ -57,16 +57,16 @@
         },
         {
             "name": "stratify/http",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stratifyphp/http.git",
-                "reference": "d988ac6abb1b40dba347f581023f1120dcc3441c"
+                "reference": "4358876b42c04f4682d90114a687b9e11fa68f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stratifyphp/http/zipball/d988ac6abb1b40dba347f581023f1120dcc3441c",
-                "reference": "d988ac6abb1b40dba347f581023f1120dcc3441c",
+                "url": "https://api.github.com/repos/stratifyphp/http/zipball/4358876b42c04f4682d90114a687b9e11fa68f51",
+                "reference": "4358876b42c04f4682d90114a687b9e11fa68f51",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2015-08-26 08:51:27"
+            "time": "2015-09-01 16:44:29"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -141,9 +141,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "stratify/http": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
