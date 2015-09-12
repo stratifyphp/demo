@@ -1,8 +1,17 @@
 minimal:
-    image: coderstephen/php7
+    image: likol1227/php7
     ports:
         - "8080:8000"
     volumes:
-        - .:/app
+        - ./minimal:/app
     working_dir: /app
-    command: "php -S 0.0.0.0:8000 -t minimal"
+    command: "php -S 0.0.0.0:8000"
+
+micro:
+    image: likol1227/php7
+    ports:
+        - "8081:8000"
+    volumes:
+        - ./micro:/app
+    working_dir: /app
+    command: "php -S 0.0.0.0:8000"

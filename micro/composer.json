@@ -1,0 +1,10 @@
+{
+    "require": {
+        "stratify/framework": "~0.1.1",
+        "stratify/twig-module": "~0.1.1"
+    },
+    "require-dev": {
+        "puli/cli": "^1.0"
+    },
+    "minimum-stability": "beta"
+}
