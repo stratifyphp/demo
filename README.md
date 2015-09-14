@@ -28,3 +28,9 @@ Check out the [`minimal/index.php`](minimal/index.php) file.
 The micro-application is an example of a simple website using Twig. It's very similar to what you get out of the box with Silex or Slim (when you add Twig support).
 
 Check out the [`micro/index.php`](micro/index.php) file.
+
+## Full-stack application
+
+The Full-stack application is an example of a well structured and organized web application.
+
+Check out the [`full/`](full/) directory.
