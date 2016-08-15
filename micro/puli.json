@@ -3,6 +3,9 @@
     "path-mappings": {
         "/app": "res"
     },
+    "config": {
+        "bootstrap-file": "vendor/autoload.php"
+    },
     "packages": {
         "aura/router": {
             "install-path": "vendor/aura/router",
@@ -12,14 +15,21 @@
             "install-path": "vendor/container-interop/container-interop",
             "installer": "composer"
         },
+        "doctrine/cache": {
+            "install-path": "vendor/doctrine/cache",
+            "installer": "composer"
+        },
         "filp/whoops": {
             "install-path": "vendor/filp/whoops",
             "installer": "composer"
         },
         "justinrainbow/json-schema": {
             "install-path": "vendor/justinrainbow/json-schema",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
+        },
+        "mnapoli/silly": {
+            "install-path": "vendor/mnapoli/silly",
+            "installer": "composer"
         },
         "padraic/humbug_get_contents": {
             "install-path": "vendor/padraic/humbug_get_contents",
@@ -31,8 +41,16 @@
             "installer": "composer",
             "env": "dev"
         },
+        "paragonie/random_compat": {
+            "install-path": "vendor/paragonie/random_compat",
+            "installer": "composer"
+        },
         "php-di/invoker": {
             "install-path": "vendor/php-di/invoker",
+            "installer": "composer"
+        },
+        "php-di/kernel": {
+            "install-path": "vendor/php-di/kernel",
             "installer": "composer"
         },
         "php-di/php-di": {
@@ -83,13 +101,11 @@
         },
         "ramsey/uuid": {
             "install-path": "vendor/ramsey/uuid",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "seld/jsonlint": {
             "install-path": "vendor/seld/jsonlint",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "stratify/error-handler-module": {
             "install-path": "vendor/stratify/error-handler-module",
@@ -113,8 +129,7 @@
         },
         "symfony/console": {
             "install-path": "vendor/symfony/console",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "symfony/event-dispatcher": {
             "install-path": "vendor/symfony/event-dispatcher",
@@ -123,13 +138,11 @@
         },
         "symfony/filesystem": {
             "install-path": "vendor/symfony/filesystem",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
-        "symfony/finder": {
-            "install-path": "vendor/symfony/finder",
-            "installer": "composer",
-            "env": "dev"
+        "symfony/polyfill-mbstring": {
+            "install-path": "vendor/symfony/polyfill-mbstring",
+            "installer": "composer"
         },
         "symfony/process": {
             "install-path": "vendor/symfony/process",
@@ -150,8 +163,7 @@
         },
         "webmozart/expression": {
             "install-path": "vendor/webmozart/expression",
-            "installer": "composer",
-            "env": "dev"
+            "installer": "composer"
         },
         "webmozart/glob": {
             "install-path": "vendor/webmozart/glob",
@@ -159,11 +171,6 @@
         },
         "webmozart/json": {
             "install-path": "vendor/webmozart/json",
-            "installer": "composer",
-            "env": "dev"
-        },
-        "webmozart/key-value-store": {
-            "install-path": "vendor/webmozart/key-value-store",
             "installer": "composer"
         },
         "webmozart/path-util": {

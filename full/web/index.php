@@ -6,8 +6,9 @@ use function Stratify\Framework\pipe;
 use function Stratify\Framework\router;
 
 require __DIR__ . '/../vendor/autoload.php';
+// Current bug in Puli
+require_once __DIR__ . '/../.puli/GeneratedPuliFactory.php';
 
-// Create and run the application
 $http = pipe([
     ErrorHandlerMiddleware::class,
     router('/app/config/routes.php'),
@@ -19,5 +20,5 @@ $modules = [
     'app',            // so that Puli can find our Twig views in the res/ directory
 ];
 
-$app = new Application($http, $modules);
-$app->runHttp();
+$app = new Application($modules, 'dev', $http);
+$app->http()->run();

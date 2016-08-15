@@ -1,5 +1,5 @@
 {
     "require": {
-        "stratify/http": "~0.1.0"
+        "stratify/http": "~0.3.0"
     }
 }
