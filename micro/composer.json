@@ -1,7 +1,7 @@
 {
     "require": {
-        "stratify/framework": "~0.4.0",
-        "stratify/twig-module": "~0.1.5"
+        "stratify/framework": "~0.5.0",
+        "stratify/twig-module": "~0.1.6"
     },
     "require-dev": {
         "puli/cli": "^1.0"
