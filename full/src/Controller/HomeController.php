@@ -16,6 +16,6 @@ class HomeController
 
     public function __invoke()
     {
-        return $this->twig->render('/app/views/home.twig');
+        return $this->twig->render('home.twig');
     }
 }

@@ -9,7 +9,7 @@ require __DIR__ . '/vendor/autoload.php';
  * This application is a micro-service that returns random numbers.
  */
 $app = new Application(function () {
-    return new TextResponse(rand());
+    return new TextResponse((string) rand());
 });
 
 $app->run();

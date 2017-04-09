@@ -6,18 +6,16 @@ use function Stratify\Framework\pipe;
 use function Stratify\Framework\router;
 
 require __DIR__ . '/../vendor/autoload.php';
-// Current bug in Puli
-require_once __DIR__ . '/../.puli/GeneratedPuliFactory.php';
 
 $http = pipe([
     ErrorHandlerMiddleware::class,
-    router('/app/config/routes.php'),
+    router(include __DIR__.'/../res/config/routes.php'),
 ]);
 
 $modules = [
-    'error-handler',  // error handling
-    'twig',           // so that Twig works out of the box
-    'app',            // so that Puli can find our Twig views in the res/ directory
+    'stratify/error-handler-module',  // error handling
+    'stratify/twig-module',           // so that Twig works out of the box
+    'app',                            // our config
 ];
 
 $app = new Application($modules, 'dev', $http);

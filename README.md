@@ -8,13 +8,6 @@ In each demo project you want to run:
 
 - `cd` into the directory
 - `composer install -o`
-- `cd` back to the root
-- `docker-compose run micro php vendor/bin/puli build` (replace `micro` with the directory name)
-
-For the full-stack demo, follow these additional steps:
-
-- `cd full`
-- `docker-compose run micro php vendor/bin/puli publish --install`
 
 Then to run all the applications:
 
